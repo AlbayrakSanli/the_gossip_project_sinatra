@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h3>PAGE POTIN</h3>
+    
+      <p>
+        <% id = "#{params['id']}" %>
+        Voici la page du potin n°<%= id %><br/>
+        Son auteur : ==<%= gossips.author %>== <br/>
+        Le contenu du potin : ==<%= gossips.content %>== <br/><br/>
+
+        Lien pour revenir à la page des potins<br/><br/>
+        <a href = "http://localhost:4567/gossips/<%= id %>/edit/">Editer</a>
+      </p>
+
+  </body>
+</html>

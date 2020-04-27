@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Mon super site de gossip, depuis le dossier views !</h1>
+    <% gossips.each_with_index{|item, index| %>
+      <p>
+        <a href = "http://localhost:4567/gossips/<%= index %>"> 
+        <%= item.author %><br/>
+        <%= item.content %>
+        </a>
+      </p>
+    <% } %>
+  </body>
+</html>
